@@ -1,0 +1,64 @@
+<html>
+	<head>
+		<title>Results</title>
+	
+
+	</head>
+
+	<body>
+		<h1> Results </h1>
+		
+		<p>
+		First name: <span id= "fn"></span>
+		<br>
+		Last name: <span id= "ln"></span>
+		<br>
+		Email address: <span id= "ea"></span>
+		<br>
+		Email subscription preference: <span id= "em"></span>
+		<br>
+		Comments: <span id= "com"></span>
+		<br>
+		Contact preference: <span id= "contact_pref"></span>
+		<br>
+		Location: <span id= "st"></span>
+
+	</body>
+
+		<script>
+		var url_string = window.location.search;
+		var params = new URLSearchParams(url_string);
+			
+		var field = document.getElementById ("fn");
+			field.innerHTML = params.get("first_name");
+			
+		var field = document.getElementById ("ln");
+			field.innerHTML = params.get("last_name");
+		
+		var field = document.getElementById ("ea");
+			field.innerHTML = params.get("email_address");
+			
+		var field = document.getElementById ("em");
+			field.innerHTML = params.get("emy");
+				
+		var field = document.getElementById ("em");
+			field.innerHTML = params.get("emn");
+			      					
+		var field = document.getElementById ("com");
+			field.innerHTML = params.get("comments");
+		
+		var field = document.getElementById ("email");
+		var field = document.getElementById ("phone");
+		var field = document.getElementById ("text");
+			
+		var field = document.getElementById ("st");
+			field.innerHTML = params.get("state");
+		
+			
+	
+		</script>
+
+
+
+</html>
+I could not get the checklist or radio buttons to work
